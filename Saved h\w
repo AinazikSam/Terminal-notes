@@ -1,0 +1,21 @@
+# 10. Write a program to read the Richter magnitude value from the user and display 
+# the result for the following conditions using if...elif...else statement.
+val = float(input('Enter any floating number from 1.0 to 9.0 to define the Richter magnitude value ): '))
+
+if val >= 1.0 and val < 2.0:
+    print("Microearthquakes not felt or rarely felt")
+elif val >= 2.0 and val < 4.0:
+    print('Very rarely causes damage')
+elif val >= 4.0 and val < 5.0:
+    print("Damage done to weak buildings")
+elif val >= 5.0 and val < 6.0:
+    print("Cause damage to the poorly constructed building")
+elif val >= 6.0 and val < 7.0:
+    print("Causes damage to well-built structures")
+elif val >= 7.0 and val < 8.0:
+    print("Causes damage to most buildings")
+elif val >= 8.0 and val < 9.0:
+    print("Causes major destruction")
+elif val == 9.0:
+    print("Causes unbelievable damage")
+
