@@ -17,27 +17,27 @@ https://www.youtube.com/watch?v=1WVBC0KBOeE
 The instructions should be applicable to other Linux Ubuntu versions.
 
 ** Install VSFTPD Server :
-- Open Terminal
-- sudo apt update
-- sudo apt install vsftpd
-- sudo service vsftpd status
+ Open Terminal
+ sudo apt update
+ sudo apt install vsftpd
+ sudo service vsftpd status
 
 ** Configure Firewall :
-- sudo ufw allow 20/tcp
-- sudo ufw allow 21/tcp
-- sudo ufw allow 40000:50000/tcp
-- sudo ufw allow 990/tcp
-- sudo ufw allow openssh
-- sudo ufw enable
-- sudo ufw status
+ sudo ufw allow 20/tcp
+ sudo ufw allow 21/tcp
+ sudo ufw allow 40000:50000/tcp
+ sudo ufw allow 990/tcp
+ sudo ufw allow openssh
+ sudo ufw enable
+ sudo ufw status
 
 ** Create FTP User:
-- sudo adduser ftpuser
-- sudo mkdir /home/ftpuser/ftp
-- sudo chown nobody:nogroup /home/ftpuser/ftp
-- sudo chmod a-w /home/ftpuser/ftp
-- sudo mkdir /home/ftpuser/ftp/files
-- sudo chown ftpuser:ftpuser /home/ftpuser/ftp/files
+ sudo adduser ftpuser
+ sudo mkdir /home/ftpuser/ftp
+ sudo chown nobody:nogroup /home/ftpuser/ftp
+ sudo chmod a-w /home/ftpuser/ftp
+ sudo mkdir /home/ftpuser/ftp/files
+ sudo chown ftpuser:ftpuser /home/ftpuser/ftp/files
 
 ** VSFTPD Server Configuration :
 - sudo vi /etc/vsftpd.conf
@@ -61,7 +61,7 @@ pasv_max_port=500000
 user_sub_token=$USER
 local_root=/home/$USER/ftp
 
-- sudo systemctl restart vsftpd.service
+ sudo systemctl restart vsftpd.service
 
 ** Test FTP Connection
 - We recommend FileZilla, which works on Windows, Mac and Linux : https://filezilla-project.org/
