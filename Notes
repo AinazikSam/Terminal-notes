@@ -1,10 +1,4 @@
 
-https://phoenixnap.com/kb/how-to-setup-ftp-server-install-vsftpd-centos-7
-https://www.youtube.com/watch?v=rU6L4jqxtL0&t=0s
-
-https://www.digitalocean.com/community/tutorials/how-to-set-up-vsftpd-for-a-user-s-directory-on-ubuntu-20-04
-
-
 https://www.youtube.com/watch?v=jlaVh22fFS8
 
 
@@ -27,57 +21,3 @@ https://www.youtube.com/watch?v=1WVBC0KBOeE
 
 
 
-
-The instructions should be applicable to other Linux Ubuntu versions.
-
-** Install VSFTPD Server :
- Open Terminal
- sudo apt update
- sudo apt install vsftpd
- sudo service vsftpd status
-
-** Configure Firewall :
- sudo ufw allow 20/tcp
- sudo ufw allow 21/tcp
- sudo ufw allow 40000:50000/tcp
- sudo ufw allow 990/tcp
- sudo ufw allow openssh
- sudo ufw enable
- sudo ufw status
-
-** Create FTP User:
- sudo adduser ftpuser
- sudo mkdir /home/ftpuser/ftp
- sudo chown nobody:nogroup /home/ftpuser/ftp
- sudo chmod a-w /home/ftpuser/ftp
- sudo mkdir /home/ftpuser/ftp/files
- sudo chown ftpuser:ftpuser /home/ftpuser/ftp/files
-
-** VSFTPD Server Configuration :
-- sudo vi /etc/vsftpd.conf
-listen=NO
-listen_ipv6=YES
-anonymos_enable=NO
-local_enable=YES
-write_enable=YES
-local_mask=022
-dirmessage_enable=YES
-use_localtime=YES
-xferlog_enable=YES
-connect_from_port_20=YES
-chroot_local_user=YES
-secure_chroot_dir=/var/run/vsftpd/empty
-pam_service_name=vsftpd
-force_dot_files=YES
-pasv_min_port=400000
-pasv_max_port=500000
-
-user_sub_token=$USER
-local_root=/home/$USER/ftp
-
- sudo systemctl restart vsftpd.service
-
-** Test FTP Connection
-- We recommend FileZilla, which works on Windows, Mac and Linux : https://filezilla-project.org/
-
-We recommended to secure your FTP server, you can watch the second video which describes the steps of securing an FTP server :  📽 🎞 ▶ https://youtu.be/N7hwrPiji3c 
