@@ -27,3 +27,20 @@ https://www.youtube.com/watch?v=1WVBC0KBOeE
 https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-centos-7 - mysql server
 
 sudo yum remove mysql mysql-server
+
+
+
+
+
+
+
+
+Solve yum install mysql-server exception under CentOS7: No package mysql-server available.
+
+Solution to the problem that yum installs mysql-server has no available package:
+
+step 1: wget http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm
+
+step 2: rpm -ivh mysql-community-release-el7-5.noarch.rpm
+
+After the above two steps, execute again: yum install mysql-server command can be successfully installed.
