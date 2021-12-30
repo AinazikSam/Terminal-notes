@@ -25,3 +25,5 @@ https://www.youtube.com/watch?v=1WVBC0KBOeE
 
 
 https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-centos-7 - mysql server
+
+sudo yum remove mysql mysql-server
