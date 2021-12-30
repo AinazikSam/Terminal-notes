@@ -45,3 +45,8 @@ step 1: wget http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm
 step 2: rpm -ivh mysql-community-release-el7-5.noarch.rpm
 
 After the above two steps, execute again: yum install mysql-server command can be successfully installed.
+
+
+
+
+https://tecadmin.net/install-lamp-apache-mysql-and-php-on-centos-rhel-7/
