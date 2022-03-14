@@ -1,0 +1,2 @@
+ pip3 install django-crispy-forms
+ sudo apt-get install python3-psycopg2
