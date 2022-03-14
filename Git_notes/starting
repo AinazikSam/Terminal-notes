@@ -1,0 +1,17 @@
+git init
+git add .
+git rm --cached
+git status
+git commit -m "message is here"
+git --help
+
+//   .gitignore && readme.md
+
+git branch
+git branch (name og the branch)         //to create branch
+git branch -D (name og the branch)      //to delete branch
+git checkout (name og the branch)       //switch between branches
+git checkout -b (name og the branch)    //switch between branches and the same time switch to that branch straightaway
+git merge (name og the branch)          //to join each other (each branch)
+
+//after you can delete  extra branches
