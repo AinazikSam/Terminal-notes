@@ -16,3 +16,9 @@ git checkout -b (name og the branch)    //switch between branches and the same t
 git merge (name of the branch)          //to join each other (each branch)
 
 //after you can delete  extra branches
+_________________________________________________________________________________________
+git remote add origin https://github.com/AinazikS/Online-Recording-System.git
+git push -u origin
+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
+_________________________________________________________________________________________
+
