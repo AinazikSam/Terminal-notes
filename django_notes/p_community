@@ -1,6 +1,8 @@
  pip3 install django-crispy-forms
  sudo apt-get install python3-psycopg2
  pip3 install django
+ pip install psycopg2-binary
+ 
 __________________________________________________
 sudo apt-get install python3-pip
 
@@ -12,6 +14,7 @@ virtualenv -p /usr/bin/python3.9 venv
 
 source venv/bin/activate
 __________________________________________________
+
 
 Using fish shell:
 source venv/bin/activate.fish
