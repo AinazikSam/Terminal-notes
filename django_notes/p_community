@@ -28,6 +28,11 @@ virtualenv -p python3 myenv
 Instead of using virtualenv you can use this command in Python3
 python3 -m venv myenv
 
-
+______________________________________________________________________________________________________________________________________________________
 django.db.utils.OperationalError: connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "postgres"
 connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+
+https://softwaretester.info/pycharm-community-edition-and-database-navigator/
+______________________________________________________________________________________________________________________________________________________
+
