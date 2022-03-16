@@ -2,7 +2,7 @@
  sudo apt-get install python3-psycopg2
  pip3 install django
  pip install psycopg2-binary
-                                                                                   //Free up some memory
+ pip install --upgrade pip                                                                                   //Free up some memory
 __________________________________________________
 sudo apt-get install python3-pip
 
