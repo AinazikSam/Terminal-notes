@@ -1,0 +1,6 @@
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
+
+ py -m venv env
+ dir
+ cd env
+ Scripts\activate
